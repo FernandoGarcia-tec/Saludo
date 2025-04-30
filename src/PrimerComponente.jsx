@@ -1,5 +1,5 @@
 import React from 'react'
-import "./PrimerComponente.css"
+import './PrimerComponente.css'
 import fotoPerfil from "./assets/foto.jpg"
 
 export const DatosPersonales = () => {
