@@ -17,9 +17,9 @@ export const DatosPersonales = () => {
           <h2>Desarrollador</h2>
           <p>Transformo ideas en productos digitales funcionales y modernos.</p>
           <div className="hero-links">
-            <a href="https://github.com/juanperez" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/juanperez" target="_blank">LinkedIn</a>
-            <a href="mailto:juan.perez@email.com">Email</a>
+            <a href="https://github.com/FernandoGarcia-tec" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/fernandogarciaq" target="_blank">LinkedIn</a>
+            <a href="mailto:garciaquintero00@gmail.com">Email</a>
           </div>
         </div>
         <img src={fotoPerfil} alt="Foto de perfil" className="hero-photo" />
@@ -78,7 +78,7 @@ export const DatosPersonales = () => {
       </section>
 
       <footer className="contact" >
-        <p>¿Listo para colaborar? 📩 <strong>juan.perez@email.com</strong></p>
+        <p>¿Listo para colaborar? 📩 <strong>garciaquintero00@gmail.com</strong></p>
       </footer>
     </div>
   );
