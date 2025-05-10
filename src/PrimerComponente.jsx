@@ -54,6 +54,7 @@ export const DatosPersonales = () => {
         <div className="skill-tags">
           <span>React</span>
           <span>Node.js</span>
+          <span>Python</span>
           <span>MongoDB</span>
           <span>JavaScript</span>
           <span>HTML5</span>
@@ -89,8 +90,15 @@ export const DatosPersonales = () => {
         <ul>
           <li><strong>Ingeniería Informática</strong> – Instituto Tecnológico de Colima (2020 – Actualidad (en curso))</li>
           <li><strong>Técnico en Programación</strong> – Centro de Bachillerato Tecnológico Industrial y de Servicios No. 157 (2014 – 2017)</li>
-          <li><strong>Diplomado en Ciencia de Datos</strong> – Tecnológico Nacional de México (2023 - 2024)</li>
           <li><strong>Diplomado en Física Cuántica</strong> – Tecnológico Nacional de México (2025 - Actualidad (en curso))</li>
+          <li><strong>Diplomado en Ciencia de Datos</strong> – Tecnológico Nacional de México (2023 - 2024)</li>
+          <li><strong>Curso en Administrador de bases de datos</strong> – Fundación Carlos Slim (2023)</li>
+          <li><strong>Curso en Finder</strong> – Fundación Carlos Slim (2020)</li>
+          <li><strong>Curso en Desarrollador de videojuegos</strong> – Fundación Carlos Slim (2020)</li>
+          <li><strong>Curso en Ciudadano global</strong> – Fundación Carlos Slim (2019)</li>
+          <li><strong>Curso en Curador de datos</strong> – Fundación Carlos Slim (2019)</li>
+          <li><strong>Curso en Técnico en informática (Ofimática)</strong> – Fundación Carlos Slim (2019)</li>
+
         </ul>
       </section>
       
