@@ -55,12 +55,14 @@ export const DatosPersonales = () => {
           <span>React</span>
           <span>Node.js</span>
           <span>Python</span>
+          <span>Java</span>
+          <span>SQL</span>
+          <span>MySQL</span>
           <span>MongoDB</span>
           <span>JavaScript</span>
           <span>HTML5</span>
           <span>CSS3</span>
           <span>Git</span>
-          <span>Express.js</span>
         </div>
       </section>
 
@@ -92,6 +94,8 @@ export const DatosPersonales = () => {
           <li><strong>Técnico en Programación</strong> – Centro de Bachillerato Tecnológico Industrial y de Servicios No. 157 (2014 – 2017)</li>
           <li><strong>Diplomado en Física Cuántica</strong> – Tecnológico Nacional de México (2025 - Actualidad (en curso))</li>
           <li><strong>Diplomado en Ciencia de Datos</strong> – Tecnológico Nacional de México (2023 - 2024)</li>
+          <li><strong>Certificado: Master Mobile Game Development with Godot 4</strong> – Udemy(2024)</li>
+          <li><strong>Reconocimiento: Participación destacada en el concurso “Tu Videojuego SACMEX”</strong> – Ciudad de México, organizado por SACMEX</li>
           <li><strong>Curso en Administrador de bases de datos</strong> – Fundación Carlos Slim (2023)</li>
           <li><strong>Curso en Finder</strong> – Fundación Carlos Slim (2020)</li>
           <li><strong>Curso en Desarrollador de videojuegos</strong> – Fundación Carlos Slim (2020)</li>
