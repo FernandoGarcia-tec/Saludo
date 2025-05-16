@@ -3,12 +3,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './stilo.css';
 import fotoPerfil from "./assets/foto.jpg";
+import portafolioImagen from "./assets/portafolio.png";
+
 
 export const DatosPersonales = () => {
- useEffect(() => {
-  AOS.init({ duration: 1000 });
-  window.scrollTo(0, 0); // <-- fuerza al tope
-}, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    window.scrollTo(0, 0); // <-- fuerza al tope
+  }, []);
 
 
   return (
@@ -24,7 +26,7 @@ export const DatosPersonales = () => {
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
-      
+
       <header className="hero" data-aos="fade-up">
         <div className="hero-text">
           <h1>José Fernando García Quintero</h1>
@@ -49,6 +51,8 @@ export const DatosPersonales = () => {
         </p>
       </section>
 
+      <div class="section-separator"></div>
+
       <section id='skills' className="skills" data-aos="zoom-in">
         <h2>Habilidades</h2>
         <div className="skill-tags">
@@ -66,26 +70,55 @@ export const DatosPersonales = () => {
         </div>
       </section>
 
+      <div class="section-separator"></div>
+
       <section id='projects' className="projects" data-aos="fade-up">
         <h2>Proyectos</h2>
         <div className="project-grid">
           <div className="project-card">
-            <h3>Dashboard de Ventas</h3>
-            <p>Visualiza datos de ventas en tiempo real. React + Chart.js</p>
-            <a href="#">Ver más</a>
+            <img src={portafolioImagen} />
+            <h3>Portafolio</h3>
+
+            <p>Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+            <div class="project-buttons">
+              <a href="https://saludo-ctym.vercel.app/"><span>👁</span> VER</a>
+              <a href="https://github.com/FernandoGarcia-tec/Saludo"><span>📂</span> REPOSITORIO</a>
+            </div>
           </div>
           <div className="project-card">
-            <h3>Blog Técnico</h3>
-            <p>Blog personal con temas de desarrollo. Gatsby + Markdown</p>
-            <a href="#">Ver más</a>
+            <img src={portafolioImagen} />
+            <h3>Portafolio</h3>
+
+            <p>Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+            <div class="project-buttons">
+              <a href="https://saludo-ctym.vercel.app/"><span>👁</span> VER</a>
+              <a href="https://github.com/FernandoGarcia-tec/Saludo"><span>📂</span> REPOSITORIO</a>
+            </div>
           </div>
           <div className="project-card">
-            <h3>Gestor de Tareas</h3>
-            <p>App CRUD con MongoDB, Express y React</p>
-            <a href="#">Ver más</a>
+            <img src={portafolioImagen} />
+            <h3>Portafolio</h3>
+
+            <p>Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+            <div class="project-buttons">
+              <a href="https://saludo-ctym.vercel.app/"><span>👁</span> VER</a>
+              <a href="https://github.com/FernandoGarcia-tec/Saludo"><span>📂</span> REPOSITORIO</a>
+            </div>
+          </div>
+          <div className="project-card">
+            <img src={portafolioImagen} />
+            <h3>Portafolio</h3>
+
+            <p>Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
+            <div class="project-buttons">
+              <a href="https://saludo-ctym.vercel.app/"><span>👁</span> VER</a>
+              <a href="https://github.com/FernandoGarcia-tec/Saludo"><span>📂</span> REPOSITORIO</a>
+            </div>
           </div>
         </div>
       </section>
+
+<div class="section-separator"></div>
 
       <section id='timeline' className="timeline" data-aos="fade-right">
         <h2>Trayectoria</h2>
@@ -105,11 +138,11 @@ export const DatosPersonales = () => {
 
         </ul>
       </section>
-      
-        <footer id='contact' className="contact" >
-          <p>¿Listo para colaborar? 📩 <strong>garciaquintero00@gmail.com</strong></p>
-        </footer>
-     
+<div class="section-separator"></div>
+      <footer id='contact' className="contact" >
+        <p>¿Listo para colaborar? 📩 <strong>garciaquintero00@gmail.com</strong></p>
+      </footer>
+
     </div>
   );
 };

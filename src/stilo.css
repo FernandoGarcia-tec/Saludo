@@ -163,19 +163,20 @@ body, html {
 /* Secciones generales */
 section {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   scroll-margin-top: 100px;
   margin: 4rem auto;
   text-align: center;
-  padding: 0 1rem;
   animation: fadeIn 1s ease;
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #3b0066;
-  position: relative;
+  color: #4b0082;
+  border-bottom: 3px solid #d1bbff;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
 section p, section li {
@@ -205,43 +206,92 @@ section p, section li {
   background-color: #d1bbff;
   transform: scale(1.05);
 }
-
-/* Proyectos */
 .project-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .project-card {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
-  transition: all 0.3s ease;
+  background-color: #e5d4ff; /* Violeta claro */
+  width: 400px;
+  height: 470px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(123, 47, 247, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  color: #4b0082;
 }
 
 .project-card:hover {
-  background-color: #f3f0ff;
-  border-radius: 10px;
-  transform: scale(1.01);
+  background-color: #d1bbff;
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #c8a2ff;
+}
+
+.project-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card h3 {
-  color: #3a005f;
   font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  color: #4b0082;
+  margin-bottom: 0.75rem;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
+  color: #333;
+  margin-bottom: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.project-card a {
-  color: #7b2ff7;
-  text-decoration: underline;
-  font-weight: 600;
+.project-buttons {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
 }
+
+.project-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid #7b2ff7;
+  background-color: #7b2ff7;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.project-buttons a:hover {
+  background-color: transparent;
+  color: #7b2ff7;
+}
+
 
 /* Trayectoria */
 .timeline ul {
@@ -272,4 +322,29 @@ section p, section li {
   
   background-color: #c1a4f3;
   width: 1500px;
+}
+
+/* Estilos para alternar colores entre secciones */
+section:nth-of-type(odd) {
+  padding: 4rem 2rem;
+  box-shadow: inset 0 -3px 10px rgba(123, 47, 247, 0.05);
+}
+
+section:nth-of-type(even) {
+  padding: 4rem 2rem;
+  box-shadow: inset 0 -3px 10px rgba(0, 119, 255, 0.05);
+}
+
+/* Agrega espacio entre las secciones (si no hay margin ya) */
+section + section {
+  margin-top: 2rem;
+}
+
+/* Opcional: separador decorativo entre secciones */
+.section-separator {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #7b2ff7, #00bfff);
+  margin: 2rem auto;
+  border-radius: 10px;
 }
