@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './stilo.css';
 import fotoPerfil from "./assets/foto.jpg";
+import fotojuego from "./assets/logo.png";
 import portafolioImagen from "./assets/portafolio.png";
 
 
@@ -76,8 +77,8 @@ export const DatosPersonales = () => {
         <h2>Proyectos</h2>
         <div className="project-grid">
           <div className="project-card">
-            <img src={portafolioImagen} />
-            <h3>Portafolio</h3>
+            <img src={fotojuego} />
+            <h3>JaguarSaltarin</h3>
 
             <p>Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.</p>
             <div class="project-buttons">
