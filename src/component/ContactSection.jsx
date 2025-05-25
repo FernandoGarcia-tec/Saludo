@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import emailjs from 'emailjs-com';
 import './contact-section.css';
 export function ContactSection() {
   function handleSubmit(event) {
@@ -11,12 +12,30 @@ export function ContactSection() {
     const email = formData.get('email');
     const message = formData.get('message');
 
-    alert(`Mensaje enviado por ${name} (${email}):\n${message}`);
-    form.reset();
+    // EmailJS config: reemplaza estos valores con los tuyos
+    const serviceID = 'service_gajrhtn';
+    const templateID = 'template_9dkpabt';
+    const userID = 'tIMf8gsItCyr39sCM';
+
+    emailjs.send(serviceID, templateID, {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_email: 'garciaquintero00@gmail.com',
+    }, userID)
+      .then(() => {
+        alert('¡Mensaje enviado correctamente!');
+        form.reset();
+      })
+      .catch((error) => {
+        alert('Error al enviar el mensaje. Intenta de nuevo.');
+        console.error(error);
+      });
   }
 
   return (
     <section id="contact" className="bg-secondary/30">
+        <div style={{ height: '2rem' }} />
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
           Contacta Conmigo
