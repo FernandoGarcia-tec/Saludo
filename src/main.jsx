@@ -7,7 +7,7 @@ import {Navbar} from './component/navbarhead';
 import { HeroSection } from './component/hero-section';
 import { AboutSection } from './component/AboutSection';
 import { ProjectsSection } from './component/ProjectsSection';
-import { Footer } from './component/footer';
+import { Footer } from './component/footerP';
 import { ContactSection } from './component/ContactSection';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
