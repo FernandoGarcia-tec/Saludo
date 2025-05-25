@@ -1,15 +1,23 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { DatosPersonales } from './PrimerComponente.jsx';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './stilo.css';
+import './stiloproj.css'
+import {Navbar} from './component/navbarhead';
+import { HeroSection } from './component/hero-section';
+import { AboutSection } from './component/AboutSection';
+import { ProjectsSection } from './component/ProjectsSection';
+import { Footer } from './component/footer';
+import { ContactSection } from './component/ContactSection';
 
-
-    <DatosPersonales />
-    {/* <DatosPersonales /> */}
-  </StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+   <Navbar />
+  <HeroSection />  
+  <AboutSection />
+  <ProjectsSection />
+  <ContactSection />
+  <Footer />
+   
+  </React.StrictMode>
+);
